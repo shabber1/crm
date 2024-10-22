@@ -103,7 +103,7 @@
 	</build>
 	</profile>
 	<profile>
-		<id>RR</id>
+		<id>RRT</id>
 		<build>
       <plugins>
 		<plugin>
