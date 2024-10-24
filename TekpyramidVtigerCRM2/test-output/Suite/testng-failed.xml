@@ -5,18 +5,30 @@
     <listener class-name="com.comcast.crm.listenerutility.ListenerImplimentationClass"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="BROWSER" value="edge"/>
     <classes>
-      <class name="practicetestng.InvoiceTest">
+      <class name="com.comcast.crm.contacttest.CreateContactTest">
         <methods>
           <include name="configBS"/>
           <include name="configBC"/>
           <include name="configAS"/>
           <include name="configAC"/>
           <include name="congigAM"/>
-          <include name="createInvoiceTest"/>
+          <include name="configBM"/>
+          <include name="CreateContactwithorgtest"/>
+        </methods>
+      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
+      <class name="com.comcast.crm.orgtest.CreateOrganizationTest">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createOrganizationTest"/>
+          <include name="congigAM"/>
           <include name="configBM"/>
         </methods>
-      </class> <!-- practicetestng.InvoiceTest -->
+      </class> <!-- com.comcast.crm.orgtest.CreateOrganizationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

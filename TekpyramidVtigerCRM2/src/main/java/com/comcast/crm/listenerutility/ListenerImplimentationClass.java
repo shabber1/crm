@@ -71,7 +71,6 @@ public class ListenerImplimentationClass implements ITestListener,ISuiteListener
 		String time = new Date().toString().replace(" ","_").replace(":", "_");
 		test.addScreenCaptureFromBase64String(filepath, testName+"_"+time);
 		test.log(Status.FAIL,result.getMethod().getMethodName()+"===> FAILED <===");
-
 	}
 
 	@Override
