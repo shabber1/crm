@@ -27,7 +27,8 @@ public class DataBaseUtility {
 		}
 	}
 	public void closedbconnection() throws SQLException {
-		con.close();
+		try{con.close();}
+		catch(Exception e) {}
 	}
 	public ResultSet executeConSelectQuery(String query) {
 		ResultSet result=null;
